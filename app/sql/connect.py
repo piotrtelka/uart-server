@@ -5,11 +5,11 @@ from fastapi import Depends
 from sqlmodel import create_engine, Session
 from app.settings import Settings
 
-POOL_SIZE = int(os.getenv("POOL_SIZE", "4"))
+settings = Settings()
 
 engine = create_engine(
-    Settings().database_url,
-    pool_size=POOL_SIZE,
+    settings.database_url,
+    pool_size=settings.pool_size,
 )
 
 

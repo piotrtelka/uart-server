@@ -26,6 +26,7 @@ uart-server can be configured using env vars or .env file. List of supported var
 - `BAUD_RATE` - ports baud rate. Defaults to `115000`
 - `HOST` - API host. Defaults to `localhost`
 - `PORT` - API port. Defaults to `7100`
+- `POOL_SIZE` - size of the pool of connections to the database. Defaults to `4`
 
 ## Swagger:
 
