@@ -42,3 +42,7 @@ After that you can apply generated migration:
 ## API
 
 All the endpoints are implemented in accordance with the guidelines from task description.
+
+## Tests:
+
+To run tests use `pytest` in the root directory of the project.
