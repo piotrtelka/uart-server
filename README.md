@@ -5,15 +5,15 @@ Server with HTTP API that communicates with UART device.
 ## Preparation:
 
 1. create virtual environment: `python -m venv .venv`
-2. activate virtual environment: `source .venv/bin/acitvate`
+2. activate virtual environment: `source .venv/bin/activate`
 3. install requirements: `python -m pip install -r requirements.txt`
-4. create database file: `sqlite3 database.db`
+4. create database file: `touch database.db`
 5. create .env file: `cp .env.example .env`
 
 ## Running the server:
 
 To run the server serial device is needed. For development purposes I created uart-device repo that emulates serial device using `socat` command.
-For details go here: https://github.com/piotrtelka/uart-device. The easiest way to start both tools is to put them in same folder and run with default config.
+For details go here: https://github.com/piotrtelka/uart-device. The easiest way to start both tools is to put repositories in the same directory and run them with default configuration.
 
 1. run uart-device
 2. run startup.sh script `./startup.sh`. It automatically runs the server and database migrations.
