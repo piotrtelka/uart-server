@@ -10,7 +10,6 @@ POOL_SIZE = int(os.getenv("POOL_SIZE", "4"))
 engine = create_engine(
     Settings().database_url,
     pool_size=POOL_SIZE,
-    max_overflow=0,
 )
 
 
